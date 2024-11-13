@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Functions</title>
+</head>
+<body>
+    <h1>Array Operations</h1>
+
+    <h2>Initial Array</h2>
+    <p id="initial-array"></p>
+
+    <h2>Array after push()</h2>
+    <p id="push-array"></p>
+
+    <h2>Array after reverse()</h2>
+    <p id="reverse-array"></p>
+
+    <h2>Array after pop()</h2>
+    <p id="pop-array"></p>
+
+    <h2>Array after sort()</h2>
+    <p id="sort-array"></p>
+
+    <script>
+        let arr = [10, 20, 30, 40, 50];
+        
+        document.getElementById("initial-array").textContent = `Initial Array: [${arr}]`;
+
+        arr.push(4);
+        arr.push(12);
+        arr.push(3);
+        document.getElementById("push-array").textContent = `Array after push(): [${arr}]`;
+
+        arr.reverse();
+        document.getElementById("reverse-array").textContent = `Array after reverse(): [${arr}]`;
+
+        arr.pop();
+        document.getElementById("pop-array").textContent = `Array after pop(): [${arr}]`;
+
+        arr.sort((a, b) => a - b);
+        document.getElementById("sort-array").textContent = `Array after sort(): [${arr}]`;
+    </script>
+</body>
+</html>
